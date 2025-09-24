@@ -1,0 +1,1 @@
+/media/kali/SHARED/researchlab/BRAINTREE_BY_MAK/github-repositories/Web-Application-Security/wordlists/fuzzing/Databases/SQLi/MSSQL-Enumeration.txt

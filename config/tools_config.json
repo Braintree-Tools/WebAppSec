@@ -1,0 +1,387 @@
+{
+  "network_tools": {
+    "nmap": {
+      "command": "nmap",
+      "apt_package": "nmap",
+      "description": "Network discovery and security auditing",
+      "required_modules": [
+        "network_reconnaissance",
+        "web_hacking"
+      ],
+      "alternative_install": null
+    },
+    "masscan": {
+      "command": "masscan",
+      "apt_package": "masscan",
+      "description": "Fast port scanner",
+      "required_modules": [
+        "network_reconnaissance"
+      ],
+      "alternative_install": "https://github.com/robertdavidgraham/masscan"
+    },
+    "gobuster": {
+      "command": "gobuster",
+      "apt_package": "gobuster",
+      "description": "Directory/file/DNS busting tool",
+      "required_modules": [
+        "web_hacking"
+      ],
+      "alternative_install": "go get github.com/OJ/gobuster"
+    },
+    "dirb": {
+      "command": "dirb",
+      "apt_package": "dirb",
+      "description": "Web Content Scanner",
+      "required_modules": [
+        "web_hacking"
+      ],
+      "alternative_install": null
+    }
+  },
+  "wireless_tools": {
+    "aircrack-ng": {
+      "command": "aircrack-ng",
+      "apt_package": "aircrack-ng",
+      "description": "802.11 WEP and WPA-PSK keys cracking program",
+      "required_modules": [
+        "wifi_hacking",
+        "wireless_security"
+      ],
+      "alternative_install": null
+    },
+    "airodump-ng": {
+      "command": "airodump-ng",
+      "apt_package": "aircrack-ng",
+      "description": "802.11 packet capture program",
+      "required_modules": [
+        "wifi_hacking",
+        "wireless_security"
+      ],
+      "alternative_install": null
+    },
+    "aireplay-ng": {
+      "command": "aireplay-ng",
+      "apt_package": "aircrack-ng",
+      "description": "802.11 packet injection program",
+      "required_modules": [
+        "wifi_hacking",
+        "wireless_security"
+      ],
+      "alternative_install": null
+    },
+    "airmon-ng": {
+      "command": "airmon-ng",
+      "apt_package": "aircrack-ng",
+      "description": "WLAN monitor mode switching utility",
+      "required_modules": [
+        "wifi_hacking",
+        "wireless_security"
+      ],
+      "alternative_install": null
+    },
+    "wifite": {
+      "command": "wifite",
+      "apt_package": "wifite",
+      "description": "Automated wireless attack tool",
+      "required_modules": [
+        "wifi_hacking"
+      ],
+      "alternative_install": "https://github.com/derv82/wifite2"
+    },
+    "reaver": {
+      "command": "reaver",
+      "apt_package": "reaver",
+      "description": "Brute force attack against WPS",
+      "required_modules": [
+        "wifi_hacking"
+      ],
+      "alternative_install": null
+    },
+    "bully": {
+      "command": "bully",
+      "apt_package": "bully",
+      "description": "WPS brute force attack tool",
+      "required_modules": [
+        "wifi_hacking"
+      ],
+      "alternative_install": null
+    },
+    "hostapd": {
+      "command": "hostapd",
+      "apt_package": "hostapd",
+      "description": "IEEE 802.11 AP daemon",
+      "required_modules": [
+        "wifi_hacking"
+      ],
+      "alternative_install": null
+    },
+    "dnsmasq": {
+      "command": "dnsmasq",
+      "apt_package": "dnsmasq",
+      "description": "Small caching DNS proxy and DHCP server",
+      "required_modules": [
+        "wifi_hacking"
+      ],
+      "alternative_install": null
+    }
+  },
+  "web_tools": {
+    "nikto": {
+      "command": "nikto",
+      "apt_package": "nikto",
+      "description": "Web server scanner",
+      "required_modules": [
+        "web_hacking"
+      ],
+      "alternative_install": null
+    },
+    "whatweb": {
+      "command": "whatweb",
+      "apt_package": "whatweb",
+      "description": "Web application fingerprinter",
+      "required_modules": [
+        "web_hacking"
+      ],
+      "alternative_install": null
+    },
+    "wpscan": {
+      "command": "wpscan",
+      "apt_package": "wpscan",
+      "description": "WordPress security scanner",
+      "required_modules": [
+        "web_hacking"
+      ],
+      "alternative_install": "gem install wpscan"
+    },
+    "sqlmap": {
+      "command": "sqlmap",
+      "apt_package": "sqlmap",
+      "description": "Automatic SQL injection testing tool",
+      "required_modules": [
+        "sql_injection",
+        "web_hacking"
+      ],
+      "alternative_install": "https://github.com/sqlmapproject/sqlmap"
+    }
+  },
+  "exploitation_tools": {
+    "metasploit-framework": {
+      "command": "msfconsole",
+      "apt_package": "metasploit-framework",
+      "description": "Exploitation framework",
+      "required_modules": [
+        "exploitation",
+        "post_exploitation"
+      ],
+      "alternative_install": null
+    },
+    "msfvenom": {
+      "command": "msfvenom",
+      "apt_package": "metasploit-framework",
+      "description": "Payload generator",
+      "required_modules": [
+        "payload_encryption",
+        "exploitation"
+      ],
+      "alternative_install": null
+    },
+    "searchsploit": {
+      "command": "searchsploit",
+      "apt_package": "exploitdb",
+      "description": "Exploit database search utility",
+      "required_modules": [
+        "exploitation"
+      ],
+      "alternative_install": null
+    }
+  },
+  "analysis_tools": {
+    "wireshark": {
+      "command": "wireshark",
+      "apt_package": "wireshark",
+      "description": "Network protocol analyzer",
+      "required_modules": [
+        "wireshark_analysis",
+        "network_reconnaissance"
+      ],
+      "alternative_install": null
+    },
+    "tshark": {
+      "command": "tshark",
+      "apt_package": "wireshark",
+      "description": "Terminal-based Wireshark",
+      "required_modules": [
+        "wireshark_analysis"
+      ],
+      "alternative_install": null
+    },
+    "tcpdump": {
+      "command": "tcpdump",
+      "apt_package": "tcpdump",
+      "description": "Packet capture tool",
+      "required_modules": [
+        "network_reconnaissance"
+      ],
+      "alternative_install": null
+    }
+  },
+  "mobile_tools": {
+    "adb": {
+      "command": "adb",
+      "apt_package": "android-tools-adb",
+      "description": "Android Debug Bridge",
+      "required_modules": [
+        "mobile_security"
+      ],
+      "alternative_install": null
+    },
+    "aapt": {
+      "command": "aapt",
+      "apt_package": "aapt",
+      "description": "Android Asset Packaging Tool",
+      "required_modules": [
+        "mobile_security"
+      ],
+      "alternative_install": null
+    },
+    "apktool": {
+      "command": "apktool",
+      "apt_package": "apktool",
+      "description": "APK reverse engineering tool",
+      "required_modules": [
+        "mobile_security"
+      ],
+      "alternative_install": null
+    }
+  },
+  "crypto_tools": {
+    "hashcat": {
+      "command": "hashcat",
+      "apt_package": "hashcat",
+      "description": "Advanced password recovery",
+      "required_modules": [
+        "wifi_hacking",
+        "payload_encryption"
+      ],
+      "alternative_install": null
+    },
+    "john": {
+      "command": "john",
+      "apt_package": "john",
+      "description": "John the Ripper password cracker",
+      "required_modules": [
+        "wifi_hacking",
+        "post_exploitation"
+      ],
+      "alternative_install": null
+    },
+    "hydra": {
+      "command": "hydra",
+      "apt_package": "hydra",
+      "description": "Network logon cracker",
+      "required_modules": [
+        "network_reconnaissance",
+        "web_hacking"
+      ],
+      "alternative_install": null
+    }
+  },
+  "social_engineering_tools": {
+    "setoolkit": {
+      "command": "setoolkit",
+      "apt_package": "set",
+      "description": "Social Engineer Toolkit",
+      "required_modules": [
+        "social_engineering"
+      ],
+      "alternative_install": "https://github.com/trustedsec/social-engineer-toolkit"
+    },
+    "beef-xss": {
+      "command": "beef-xss",
+      "apt_package": "beef-xss",
+      "description": "Browser Exploitation Framework",
+      "required_modules": [
+        "social_engineering",
+        "web_hacking"
+      ],
+      "alternative_install": null
+    }
+  },
+  "python_packages": {
+    "requests": {
+      "import_name": "requests",
+      "pip_package": "requests",
+      "description": "HTTP library for Python",
+      "required_modules": [
+        "all"
+      ],
+      "alternative_install": null
+    },
+    "beautifulsoup4": {
+      "import_name": "bs4",
+      "pip_package": "beautifulsoup4",
+      "description": "HTML/XML parsing library",
+      "required_modules": [
+        "web_hacking",
+        "osint_intelligence"
+      ],
+      "alternative_install": null
+    },
+    "colorama": {
+      "import_name": "colorama",
+      "pip_package": "colorama",
+      "description": "Cross-platform colored terminal text",
+      "required_modules": [
+        "all"
+      ],
+      "alternative_install": null
+    },
+    "pyfiglet": {
+      "import_name": "pyfiglet",
+      "pip_package": "pyfiglet",
+      "description": "ASCII art text generator",
+      "required_modules": [
+        "all"
+      ],
+      "alternative_install": null
+    },
+    "scapy": {
+      "import_name": "scapy",
+      "pip_package": "scapy",
+      "description": "Packet manipulation library",
+      "required_modules": [
+        "wireless_security",
+        "network_reconnaissance"
+      ],
+      "alternative_install": null
+    },
+    "phonenumbers": {
+      "import_name": "phonenumbers",
+      "pip_package": "phonenumbers",
+      "description": "Phone number parsing library",
+      "required_modules": [
+        "osint_intelligence"
+      ],
+      "alternative_install": null
+    },
+    "python-whois": {
+      "import_name": "whois",
+      "pip_package": "python-whois",
+      "description": "WHOIS lookup library",
+      "required_modules": [
+        "osint_intelligence"
+      ],
+      "alternative_install": null
+    },
+    "dnspython": {
+      "import_name": "dns",
+      "pip_package": "dnspython",
+      "description": "DNS toolkit for Python",
+      "required_modules": [
+        "osint_intelligence",
+        "network_reconnaissance"
+      ],
+      "alternative_install": null
+    }
+  }
+}

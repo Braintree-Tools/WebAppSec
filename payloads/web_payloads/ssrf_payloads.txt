@@ -1,0 +1,6 @@
+http://127.0.0.1:80
+http://localhost:22
+http://169.254.169.254/
+http://metadata.google.internal/
+file:///etc/passwd
+gopher://127.0.0.1:25/_HELO%20localhost

