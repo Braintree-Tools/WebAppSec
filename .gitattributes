@@ -1,7 +1,7 @@
 # Only track specific large files that exceed GitHub limits
 wordlists/passwords/rockyou.txt filter=lfs diff=lfs merge=lfs -text
 wordlists/usernames/xato-net-10-million-usernames.txt filter=lfs diff=lfs merge=lfs -text
+wordlists/users/xato-net-10-million-usernames.txt filter=lfs diff=lfs merge=lfs -text
 # Binary executables that should use LFS
 shells/web_shells/nc.exe filter=lfs diff=lfs merge=lfs -text
 # All other files (including text files) are tracked normally for proper GitHub zip downloads
-wordlists/users/xato-net-10-million-usernames.txt filter=lfs diff=lfs merge=lfs -text
